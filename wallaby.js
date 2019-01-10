@@ -22,7 +22,7 @@ module.exports = function (wallaby) {
     preprocessors: {
       // This translate templateUrl and styleUrls to the right implementation
       // For wallaby
-      'projects/**/*.component.ts': ngxWallabyJest,
+      'src/app/**/*.component.ts': ngxWallabyJest,
     },
     testFramework: 'jest'
   };
