@@ -6,6 +6,7 @@ module.exports = {
     __TRANSFORM_HTML__: true,
   },
   testMatch: ['**/__tests__/**/*.+(ts|js)?(x)', '**/+(*.)+(spec|test).+(ts|js)?(x)'],
+  setupFiles: ['<rootDir>/setup-jest.ts'],
   setupTestFrameworkScriptFile: '<rootDir>/node_modules/@angular-builders/jest/src/jest-config/setup.js',
   transform: {
     '^.+\\.(ts|html)$': '<rootDir>/node_modules/jest-preset-angular/preprocessor.js',

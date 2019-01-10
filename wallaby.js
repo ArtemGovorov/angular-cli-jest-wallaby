@@ -7,6 +7,7 @@ module.exports = function (wallaby) {
       'tsconfig.json',
       'tsconfig.spec.json',
       'jest.config.js',
+      'setup-jest.ts',
       '!src/**/*.spec.ts',
     ],
 
