@@ -18,7 +18,13 @@ module.exports = function (wallaby) {
       runner: 'node'
     },
     compilers: {
-      '**/*.ts?(x)': wallaby.compilers.typeScript({ module: 'commonjs' }),
+      '**/*.ts?(x)': wallaby.compilers.typeScript({
+        module: 'commonjs',
+        noLib: false,
+        noResolve: false,
+        noEmitOnError: true,
+        declaration: true,
+      }),
     },
     preprocessors: {
       // This translate templateUrl and styleUrls to the right implementation
